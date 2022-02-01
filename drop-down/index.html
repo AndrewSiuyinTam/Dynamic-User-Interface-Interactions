@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu</title>
+    <link rel="stylesheet" href="style.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h1 class = 'header'>Dropdown Menu</h1>
+    <h2>Using Components</h2>
+
+    <div class = 'drop-down'>
+        <button onclick="clickToggle()" id = 'click-drop-down'>Please select...
+            <i class="arrow down"></i>
+        </button>
+        
+    </div>
+    <div class = 'option_div'>
+        <ul id = 'options'>
+            <li class = 'option hide'>Mercedes</li>
+            <li class = 'option hide'>Mclaren</li>
+            <li class = 'option hide'>Haas</li>
+            <li class = 'option hide'>Williams</li>
+        </ul>
+    </div>
+    
+    <div>
+        <h1 class = 'mobile-header'>
+            Mobile Menu
+        </h1>
+
+    </div>
+    <ul class = 'mobile-menu'>
+        <a onclick="mobileNav('Home')" class ='mobile-item'>Home</a>
+        <a onclick="mobileNav('Services')" class ='mobile-item'>Services</a>
+        <a onclick="mobileNav('Members')" class ='mobile-item'>Members</a>
+        <a  onclick="mobileNav('Locations')"class ='mobile-item'>Locations</a>
+    </ul>
+    <div id="mobile-phone">
+        <h1 id = 'message'>
+            Home
+        </h1>
+        <div id = 'home-button'>
+            <div id = 'square'></div>
+        </div>
+    </div>
+
+    <div>
+        <h1 class = 'carousel-header'> Carousel</h1>
+    </div>
+    <div class = 'carousel'>
+        <a onclick="prevSlide()" id = 'prev'>
+            <-
+        </a>
+        <img class = 'images' id='image1' src = 'https://images.unsplash.com/photo-1643700122522-8dcef7fb258b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=770&q=80'>
+        <img class = 'images hide' id='image2' src = 'https://images.unsplash.com/photo-1643599630847-f368a2e5f097?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60'>
+        <img class = 'images hide' id='image3' src = 'https://images.unsplash.com/photo-1643653186622-57744bf45be1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60'>
+        <a onclick="nextSlide()" id = 'next'>
+            ->
+        </a>
+    </div>
+    </div>
+
+    </div>
+
+    <script src = 'script.js'></script>
+
+</body>
+</html>
